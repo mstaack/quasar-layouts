@@ -28,11 +28,18 @@
           </q-item-section>
         </q-item>
 
+        <q-item clickable v-close-menu to="/googleplay">
+          <q-item-section>
+            <q-item-label>Google Play layout</q-item-label>
+          </q-item-section>
+        </q-item>
+
         <q-item clickable v-close-menu to="/googlephotos">
           <q-item-section>
             <q-item-label>Google Photos layout</q-item-label>
           </q-item-section>
         </q-item>
+
       </q-list>
     </q-menu>
   </q-page>

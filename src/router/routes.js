@@ -19,6 +19,13 @@ const routes = [
     ]
   },
   {
+    path: '/googleplay',
+    component: () => import('layouts/LayoutGooglePlay.vue'),
+    children: [
+      { path: '', component: () => import('pages/Index.vue') }
+    ]
+  },
+  {
     path: '/googlephotos',
     component: () => import('layouts/LayoutGooglePhotos.vue'),
     children: [
