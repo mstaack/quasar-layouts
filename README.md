@@ -17,3 +17,7 @@ quasar new l layout-name
 Don't forget to add coomponets you use to the `quasar.conf.js` file if they are not already there.
 
 To build: `quasar dev`
+
+Currently done (add alpabetically):
+- Google Photos
+- Youtube
