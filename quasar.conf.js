@@ -43,7 +43,9 @@ module.exports = function (ctx) {
         'QSeparator',
         'QScrollArea',
         'QLinearProgress',
-        'QMenu'
+        'QMenu',
+        'QCard',
+        'QCardSection'
       ],
 
       directives: [
