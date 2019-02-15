@@ -19,7 +19,7 @@ const routes = [
     ]
   },
   {
-    path: '/photos',
+    path: '/googlephotos',
     component: () => import('layouts/LayoutGooglePhotos.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') }

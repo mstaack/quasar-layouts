@@ -28,7 +28,7 @@
           </q-item-section>
         </q-item>
 
-        <q-item clickable v-close-menu to="/photos">
+        <q-item clickable v-close-menu to="/googlephotos">
           <q-item-section>
             <q-item-label>Google Photos layout</q-item-label>
           </q-item-section>
