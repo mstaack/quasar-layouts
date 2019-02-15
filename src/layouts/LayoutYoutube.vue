@@ -27,7 +27,7 @@
 
         <q-space />
 
-        <div class="q-pa-md q-gutter-sm">
+        <div class="q-pa-md q-gutter-sm row items-center no-wrap">
           <q-btn round dense flat color="text-grey-7" size="22px" icon="video_call">
             <q-tooltip>Create a video or post</q-tooltip>
           </q-btn>

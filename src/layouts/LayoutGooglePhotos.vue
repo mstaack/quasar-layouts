@@ -12,9 +12,9 @@
           <q-icon name="menu" />
         </q-btn>
 
-        <q-toolbar-title>
-          <span class="text-blue-8">G</span><span class="text-red-8">o</span><span class="text-orange-6">o</span><span class="text-blue-8">g</span><span class="text-green-8">l</span><span class="text-red-8">e</span> Photos
-        </q-toolbar-title>
+        <div class="text-h5 no-wrap row">
+          <span class="text-blue-8">G</span><span class="text-red-8">o</span><span class="text-orange-6">o</span><span class="text-blue-8">g</span><span class="text-green-8">l</span><span class="text-red-8">e</span>&nbsp;Photos
+        </div>
 
         <q-space />
 
@@ -47,7 +47,7 @@
 
         <q-space />
 
-        <div class="q-pa-md q-gutter-sm">
+        <div class="q-pa-md q-gutter-sm row items-center no-wrap">
           <q-btn round dense flat color="text-grey-7" size="16px" icon="apps">
             <q-tooltip>Google Apps</q-tooltip>
           </q-btn>
