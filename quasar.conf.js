@@ -45,11 +45,13 @@ module.exports = function (ctx) {
         'QLinearProgress',
         'QMenu',
         'QCard',
-        'QCardSection'
+        'QCardSection',
+        'QSlider'
       ],
 
       directives: [
-        'Ripple'
+        'Ripple',
+        'CloseMenu'
       ],
 
       // Quasar plugins
