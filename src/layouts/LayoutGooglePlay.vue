@@ -171,16 +171,6 @@ export default {
 </script>
 
 <style>
-.drawer-title {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 0%;
-    flex: 1 1 0%;
-    min-width: 1px;
-    max-width: 100%;
-    font-size: 21px;
-    font-weight: normal;
-    letter-spacing: 0.01em;
-}
 .adjust-icon {
   margin: -8px 0 -8px -16px;
   padding: 8px 0 8px 16px;
