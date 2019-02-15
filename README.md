@@ -1,2 +1,2 @@
 # quasar-layouts
-Experimenting qith Quasar Layouts
+Experimenting with Quasar Layouts
