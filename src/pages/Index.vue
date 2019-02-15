@@ -1,11 +1,16 @@
 <template>
   <q-page class="flex flex-center">
-    <div>
-      <div>Right-click for Context Menu.</div>
-      <div>
+    <q-card>
+      <q-card-section class="text-center">
         <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-      </div>
-    </div>
+      </q-card-section>
+
+      <q-card-section>
+        <div class="text-subtitle1 text-center">Quasar layout examples</div>
+        <div class="text-subtitle2 text-grey text-center">Right-click for Context Menu</div>
+      </q-card-section>
+
+    </q-card>
     <q-menu
       touch-position
       context-menu
