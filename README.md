@@ -19,6 +19,7 @@ Don't forget to add componets you use to the `quasar.conf.js` file if they are n
 To build: `quasar dev`
 
 Currently done (add alpabetically):
+- Google News
 - Google Photos
 - Google Play
 - Youtube
