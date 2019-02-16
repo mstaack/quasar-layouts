@@ -84,56 +84,56 @@
             <q-item-label>{{ link.text }}</q-item-label>
           </q-item-section>
         </q-item>
-      </q-list>
 
-      <q-separator />
+        <q-separator />
 
-      <q-item v-for="link in links2" :key="link.text" clickable tag="a" target="_blank" href="javascript:void(0)">
-        <q-item-section avatar>
-          <q-icon :name="link.icon" />
-        </q-item-section>
-        <q-item-section>
-          <q-item-label>{{ link.text }}</q-item-label>
-        </q-item-section>
-      </q-item>
+        <q-item v-for="link in links2" :key="link.text" clickable tag="a" target="_blank" href="javascript:void(0)">
+          <q-item-section avatar>
+            <q-icon :name="link.icon" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>{{ link.text }}</q-item-label>
+          </q-item-section>
+        </q-item>
 
-      <q-separator />
+        <q-separator />
 
-      <q-item v-for="link in links3" :key="link.text" clickable tag="a" target="_blank" href="javascript:void(0)">
-        <q-item-section avatar>
-          <q-icon :name="link.icon" />
-        </q-item-section>
-        <q-item-section>
-          <q-item-label>{{ link.text }}</q-item-label>
-        </q-item-section>
-      </q-item>
+        <q-item v-for="link in links3" :key="link.text" clickable tag="a" target="_blank" href="javascript:void(0)">
+          <q-item-section avatar>
+            <q-icon :name="link.icon" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>{{ link.text }}</q-item-label>
+          </q-item-section>
+        </q-item>
 
-      <q-separator />
+        <q-separator />
 
-      <q-item clickable tag="a" target="_blank" href="javascript:void(0)">
-        <q-item-section avatar>
-          <q-icon name="cloud" />
-        </q-item-section>
-        <q-item-section top>
-          <q-item-label class="q-mt-md">Storage</q-item-label>
-          <q-linear-progress :value="storage" class="q-my-sm" />
-          <q-slider
-            v-model="storage"
-            readonly
-          />
-          <q-item-label caption  class="q-mb-md">2.6 GB of 15 GB</q-item-label>
-        </q-item-section>
-      </q-item>
+        <q-item clickable tag="a" target="_blank" href="javascript:void(0)">
+          <q-item-section avatar>
+            <q-icon name="cloud" />
+          </q-item-section>
+          <q-item-section top>
+            <q-item-label class="q-mt-md">Storage</q-item-label>
+            <q-linear-progress :value="storage" class="q-my-sm" />
+            <q-slider
+              v-model="storage"
+              readonly
+            />
+            <q-item-label caption  class="q-mb-md">2.6 GB of 15 GB</q-item-label>
+          </q-item-section>
+        </q-item>
 
-      <q-separator />
+        <q-separator />
 
-      <div style="margin-left: 24px;">
-        <div class="caption text-grey-7" style="position: absolute; bottom: 0">
-          <q-btn flat dense no-caps aria-label="Privacy" size="sm">Privacy</q-btn>
-          <span> - </span>
-          <q-btn flat dense no-caps aria-label="Terms" size="sm">Terms</q-btn>
+        <div style="margin-left: 24px;">
+          <div class="caption text-grey-7" style="position: absolute; bottom: 0">
+            <q-btn flat dense no-caps aria-label="Privacy" size="sm">Privacy</q-btn>
+            <span> - </span>
+            <q-btn flat dense no-caps aria-label="Terms" size="sm">Terms</q-btn>
+          </div>
         </div>
-      </div>
+      </q-list>
 
     </q-drawer>
 
