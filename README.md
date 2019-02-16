@@ -12,9 +12,7 @@ To add a new layout:
 quasar new l layout-name
 ```
 
-1) Add the new layout to the routes file.
-2) Add an item to the context menu on the page to navigate to the new layout.
-3) Have fun!
+> Make sure yu add the new layout to the routes file.
 
 Don't forget to add componets you use to the `quasar.conf.js` file if they are not already there.
 
