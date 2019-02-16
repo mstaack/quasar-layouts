@@ -114,18 +114,18 @@
             <q-item-label>{{ link.text }}</q-item-label>
           </q-item-section>
         </q-item>
-      </q-list>
 
-      <q-separator />
+        <q-separator />
 
-      <div style="margin-left: 24px;">
-        <div class="caption text-grey-7" style="position: absolute; bottom: 0">
-          <q-btn flat dense no-caps aria-label="Privacy" size="sm">Privacy</q-btn>
-          <span> - </span>
-          <q-btn flat dense no-caps aria-label="Terms" size="sm">Terms</q-btn>
+        <div style="margin-left: 24px;">
+          <div class="caption text-grey-7" style="position: absolute; bottom: 0">
+            <q-btn flat dense no-caps aria-label="Privacy" size="sm">Privacy</q-btn>
+            <span> - </span>
+            <q-btn flat dense no-caps aria-label="Terms" size="sm">Terms</q-btn>
+          </div>
         </div>
-      </div>
 
+      </q-list>
     </q-drawer>
 
     <q-page-container>

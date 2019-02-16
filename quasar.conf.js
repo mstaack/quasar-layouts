@@ -46,7 +46,8 @@ module.exports = function (ctx) {
         'QMenu',
         'QCard',
         'QCardSection',
-        'QSlider'
+        'QSlider',
+        'QSelect'
       ],
 
       directives: [
