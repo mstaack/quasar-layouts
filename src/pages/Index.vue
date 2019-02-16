@@ -1,47 +1,31 @@
 <template>
   <q-page class="flex flex-center">
     <q-card>
-      <q-card-section class="text-center">
-        <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-      </q-card-section>
-
       <q-card-section>
         <div class="text-subtitle1 text-center">Quasar layout examples</div>
-        <div class="text-subtitle2 text-grey text-center">Right-click for Context Menu</div>
+        <div class="text-subtitle2 text-grey text-center">Click to change layout</div>
       </q-card-section>
 
+      <q-card-section class="text-center">
+        <!--<img alt="Quasar logo" src="~assets/quasar-logo-full.svg">-->
+        <q-list
+          bordered
+        >
+          <q-item
+            v-for="(name, index) in routeNames"
+            :key="`route_${index}`"
+            clickable
+            :to="name"
+          >
+            <q-item-section>
+              <q-item-label>
+                {{ name }} layout
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+        </q-list>
+      </q-card-section>
     </q-card>
-    <q-menu
-      touch-position
-      context-menu
-    >
-      <q-list bordered>
-        <q-item clickable v-close-menu to="/">
-          <q-item-section>
-            <q-item-label>Quasar layout</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-menu to="/youtube">
-          <q-item-section>
-            <q-item-label>Youtube layout</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-menu to="/googleplay">
-          <q-item-section>
-            <q-item-label>Google Play layout</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-menu to="/googlephotos">
-          <q-item-section>
-            <q-item-label>Google Photos layout</q-item-label>
-          </q-item-section>
-        </q-item>
-
-      </q-list>
-    </q-menu>
   </q-page>
 </template>
 
@@ -50,6 +34,15 @@
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  computed: {
+    routeNames () {
+      return this.$router.options.routes
+        .map(x => x.children)
+        .map(children => children && children.map(child => child.name))
+        .flat()
+        .filter(x => x)
+    }
+  }
 }
 </script>
