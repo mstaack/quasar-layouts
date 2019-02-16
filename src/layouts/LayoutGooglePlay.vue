@@ -184,39 +184,25 @@ export default {
   padding-left: 14px;
 }
 
-.apps {
+.apps, .movies, .music, .books, .devices {
   background: #eee!important;
+}
+.apps:hover, .movies:hover, .music:hover, .books:hover, .devices:hover {
+  color: #eee !important;
 }
 .apps:hover {
-  color: #eee !important;
   background: #43a047!important;
 }
-.movies {
-  background: #eee!important;
-}
 .movies:hover {
-  color: #eee !important;
   background: #e53935!important;
 }
-.music {
-  background: #eee!important;
-}
 .music:hover {
-  color: #eee !important;
   background: #fb8c00!important;
 }
-.books {
-  background: #eee!important;
-}
 .books:hover {
-  color: #eee !important;
   background: #1e88e5!important;
 }
-.devices {
-  background: #eee!important;
-}
 .devices:hover {
-  color: #eee !important;
   background: #546e7a!important;
 }
 </style>
