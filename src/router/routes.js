@@ -11,11 +11,12 @@ const routes = [
       { name: 'Quasar', path: '', component: () => import('pages/Index.vue') }
     ]
   },
+  // add layouts alphabetically after Quasar
   {
-    path: '/youtube',
-    component: () => import('layouts/LayoutYoutube.vue'),
+    path: '/googlephotos',
+    component: () => import('layouts/LayoutGooglePhotos.vue'),
     children: [
-      { name: 'YouTube', path: '', component: () => import('pages/Index.vue') }
+      { name: 'GooglePhotos', path: '', component: () => import('pages/Index.vue') }
     ]
   },
   {
@@ -26,10 +27,10 @@ const routes = [
     ]
   },
   {
-    path: '/googlephotos',
-    component: () => import('layouts/LayoutGooglePhotos.vue'),
+    path: '/youtube',
+    component: () => import('layouts/LayoutYoutube.vue'),
     children: [
-      { name: 'GooglePhotos', path: '', component: () => import('pages/Index.vue') }
+      { name: 'YouTube', path: '', component: () => import('pages/Index.vue') }
     ]
   }
 ]
