@@ -8,28 +8,28 @@ const routes = [
     path: '/quasar',
     component: () => import('layouts/MyLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { name: 'Quasar', path: '', component: () => import('pages/Index.vue') }
     ]
   },
   {
     path: '/youtube',
     component: () => import('layouts/LayoutYoutube.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { name: 'YouTube', path: '', component: () => import('pages/Index.vue') }
     ]
   },
   {
     path: '/googleplay',
     component: () => import('layouts/LayoutGooglePlay.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { name: 'GooglePlay', path: '', component: () => import('pages/Index.vue') }
     ]
   },
   {
     path: '/googlephotos',
     component: () => import('layouts/LayoutGooglePhotos.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { name: 'GooglePhotos', path: '', component: () => import('pages/Index.vue') }
     ]
   }
 ]
