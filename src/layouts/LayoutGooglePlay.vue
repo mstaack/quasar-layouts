@@ -18,7 +18,7 @@
         </div>
 
         <div class="row no-wrap" style="min-width: 100px; width: 35%">
-          <q-input dense outlined v-model="search" input-class="{text-left:true, no-border-radius:true}" placeholder="Search" class="bg-white text-grey-7 no-border-radius col" />
+          <q-input dense outlined square v-model="search" input-class="{text-left:true}" placeholder="Search" class="bg-white text-grey-7 col" />
           <div class="bg-primary text-white row justify-center items-center" style="max-width: 60px; width: 100%;">
             <q-icon name="search" size="26px" />
           </div>
@@ -62,47 +62,47 @@
           </q-item-section>
         </q-item>
 
-        <q-item clickable tag="a" target="_blank" href="javascript:void(0)">
-          <q-item-section avatar class="bg-green-7 text-grey-1 text-center adjust-icon">
+        <q-item clickable class="apps" tag="a" target="_blank" href="javascript:void(0)">
+          <q-item-section avatar class="apps-icon bg-green-7 text-grey-1 text-center adjust-icon">
             <q-icon name="android" />
           </q-item-section>
-          <q-item-section class="apps adjust-text">
+          <q-item-section class="apps-text adjust-text">
             <q-item-label>Apps</q-item-label>
           </q-item-section>
         </q-item>
 
-        <q-item clickable tag="a" target="_blank" href="javascript:void(0)">
-          <q-item-section avatar class="bg-red-7 text-grey-1 text-center adjust-icon">
+        <q-item clickable class="movies" tag="a" target="_blank" href="javascript:void(0)">
+          <q-item-section avatar class="movies-icon bg-red-7 text-grey-1 text-center adjust-icon">
             <q-icon name="local_movies" />
           </q-item-section>
-          <q-item-section class="movies adjust-text">
+          <q-item-section class="movies-text adjust-text">
             <q-item-label>Movies & TV</q-item-label>
           </q-item-section>
         </q-item>
 
-        <q-item clickable tag="a" target="_blank" href="javascript:void(0)">
-          <q-item-section avatar class="bg-orange-7 text-grey-1 text-center adjust-icon">
+        <q-item clickable class="music" tag="a" target="_blank" href="javascript:void(0)">
+          <q-item-section avatar class="music-icon bg-orange-7 text-grey-1 text-center adjust-icon">
             <q-avatar size="22px" color="white" text-color="orange-7" icon="music_note" />
           </q-item-section>
-          <q-item-section class="music adjust-text">
+          <q-item-section class="music-text adjust-text">
             <q-item-label>Music</q-item-label>
           </q-item-section>
         </q-item>
 
-        <q-item clickable tag="a" target="_blank" href="javascript:void(0)">
-          <q-item-section avatar class="bg-blue-7 text-grey-1 text-center adjust-icon">
+        <q-item clickable class="books" tag="a" target="_blank" href="javascript:void(0)">
+          <q-item-section avatar class="books-icon bg-blue-7 text-grey-1 text-center adjust-icon">
             <q-icon name="book" />
           </q-item-section>
-          <q-item-section class="books adjust-text">
+          <q-item-section class="books-text adjust-text">
             <q-item-label>Books</q-item-label>
           </q-item-section>
         </q-item>
 
-        <q-item clickable tag="a" target="_blank" href="javascript:void(0)">
-          <q-item-section avatar class="bg-blue-grey-7 text-grey-1 text-center adjust-icon">
+        <q-item clickable class="devices" tag="a" target="_blank" href="javascript:void(0)">
+          <q-item-section avatar class="devices-icon bg-blue-grey-7 text-grey-1 text-center adjust-icon">
             <q-icon name="devices" />
           </q-item-section>
-          <q-item-section class="devices adjust-text">
+          <q-item-section class="devices-text adjust-text">
             <q-item-label>Devices</q-item-label>
           </q-item-section>
         </q-item>
@@ -183,6 +183,7 @@ export default {
 .adjust-text > .q-item__label {
   padding-left: 14px;
 }
+
 .apps {
   background: #eee!important;
 }
