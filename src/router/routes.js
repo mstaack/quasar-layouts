@@ -13,6 +13,13 @@ const routes = [
   },
   // add layouts alphabetically after Quasar
   {
+    path: '/github',
+    component: () => import('layouts/LayoutGitHub.vue'),
+    children: [
+      { name: 'GitHub', path: '', component: () => import('pages/Index.vue') }
+    ]
+  },
+  {
     path: '/googlenews',
     component: () => import('layouts/LayoutGoogleNews.vue'),
     children: [
