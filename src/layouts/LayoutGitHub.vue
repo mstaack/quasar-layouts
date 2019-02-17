@@ -1,8 +1,8 @@
 <template>
   <q-layout style="min-width: 1012px">
     <q-header elevated class="text-white" style="background: #24292e">
-      <q-toolbar>
-        <q-btn flat :ripple="false" icon="fab fa-github" size="19px" color="white" class="icon" no-caps>
+      <q-toolbar class="q-py-sm">
+        <q-btn round dense flat :ripple="false" icon="fab fa-github" size="19px" color="white" class="icon" no-caps>
         </q-btn>
 
         <q-select ref="search" dark dense standout use-input hide-selected
