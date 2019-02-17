@@ -21,6 +21,7 @@ To build: `quasar dev`
 Site can be seen here: https://reverent-volhard-4aed03.netlify.com
 
 Currently done (add alpabetically):
+- Github
 - Google News
 - Google Photos
 - Google Play
