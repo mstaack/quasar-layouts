@@ -25,6 +25,13 @@
           </q-item>
         </q-list>
       </q-card-section>
+      <q-card-section>
+        <div class="text-subtitle1 text-center">To Participate, go to:</div>
+        <center>
+          <q-btn round dense flat icon="fab fa-github" size="19px" color="black" class="icon" no-caps type="a" href="https://github.com/hawkeye64/quasar-layouts" />
+        </center>
+      </q-card-section>
+
     </q-card>
   </q-page>
 </template>
