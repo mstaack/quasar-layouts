@@ -46,6 +46,13 @@ const routes = [
     children: [
       { name: 'YouTube', path: '', component: () => import('pages/Index.vue') }
     ]
+  },
+  {
+    path: '/softwareasaservice',
+    component: () => import('layouts/LayoutSoftwareAsAService.vue'),
+    children: [
+      { name: 'SoftwareAsAService', path: '', component: () => import('pages/Index.vue') }
+    ]
   }
 ]
 
