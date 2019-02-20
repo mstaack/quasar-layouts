@@ -41,17 +41,17 @@ const routes = [
     ]
   },
   {
-    path: '/youtube',
-    component: () => import('layouts/LayoutYoutube.vue'),
-    children: [
-      { name: 'YouTube', path: '', component: () => import('pages/Index.vue') }
-    ]
-  },
-  {
     path: '/softwareasaservice',
     component: () => import('layouts/LayoutSoftwareAsAService.vue'),
     children: [
       { name: 'SoftwareAsAService', path: '', component: () => import('pages/Index.vue') }
+    ]
+  },
+  {
+    path: '/youtube',
+    component: () => import('layouts/LayoutYoutube.vue'),
+    children: [
+      { name: 'YouTube', path: '', component: () => import('pages/Index.vue') }
     ]
   }
 ]
