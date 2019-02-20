@@ -117,6 +117,7 @@
     <q-drawer
       v-model="leftDrawerOpen"
       overlay
+      bordered
       content-class="bg-white"
       :width="280"
     >
