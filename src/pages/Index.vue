@@ -27,9 +27,11 @@
       </q-card-section>
       <q-card-section>
         <div class="text-subtitle1 text-center">To Participate, go to:</div>
-        <center>
-          <q-btn round dense flat icon="fab fa-github" size="19px" color="black" class="icon" no-caps type="a" href="https://github.com/hawkeye64/quasar-layouts" />
-        </center>
+          <div class="bg-black q-pa-xs">
+            <center>
+              <q-btn round dense flat icon="fab fa-github" size="19px" color="white" class="icon" no-caps type="a" href="https://github.com/hawkeye64/quasar-layouts" />
+            </center>
+          </div>
       </q-card-section>
 
     </q-card>
