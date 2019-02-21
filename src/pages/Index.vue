@@ -7,10 +7,20 @@
       </q-card-section>
 
       <q-card-section class="text-center">
-        <!--<img alt="Quasar logo" src="~assets/quasar-logo-full.svg">-->
-        <route-list
-          :routes="$router.options.routes"
-        />
+        <div>
+          <div class="row justify-around q-gutter-lg">
+            <div
+              v-for="(routeGroup, index) in routeGroups"
+              :key="`route_${index}`"
+              class="col-auto"
+            >
+              <route-list
+                :name="routeGroup.name"
+                :routes="routeGroup.routes"
+              />
+            </div>
+          </div>
+        </div>
       </q-card-section>
 
       <q-card-section>
@@ -36,6 +46,19 @@ export default {
   name: 'PageIndex',
   components: {
     RouteList
+  },
+  computed: {
+    routeGroups () {
+      const children = this.$router.options.routes[0].children
+      return children && children
+        .filter(route => route.name && route.children)
+        .map(route => {
+          return {
+            name: route.name,
+            routes: route.children
+          }
+        })
+    }
   }
 }
 </script>
