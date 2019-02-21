@@ -7,24 +7,22 @@
       </q-card-section>
 
       <q-card-section class="text-center">
-        <!--<img alt="Quasar logo" src="~assets/quasar-logo-full.svg">-->
-        <q-list
-          bordered
-        >
-          <q-item
-            v-for="(name, index) in routeNames"
-            :key="`route_${index}`"
-            clickable
-            :to="name"
-          >
-            <q-item-section>
-              <q-item-label>
-                {{ name }} layout
-              </q-item-label>
-            </q-item-section>
-          </q-item>
-        </q-list>
+        <div>
+          <div class="row justify-around q-gutter-lg">
+            <div
+              v-for="(routeGroup, index) in routeGroups"
+              :key="`route_${index}`"
+              class="col-auto"
+            >
+              <route-list
+                :name="routeGroup.name"
+                :routes="routeGroup.routes"
+              />
+            </div>
+          </div>
+        </div>
       </q-card-section>
+
       <q-card-section>
         <div class="text-subtitle1 text-center">To Participate, go to:</div>
           <div class="bg-black q-pa-xs">
@@ -42,15 +40,24 @@
 </style>
 
 <script>
+import RouteList from '../components/RouteList'
+
 export default {
   name: 'PageIndex',
+  components: {
+    RouteList
+  },
   computed: {
-    routeNames () {
-      return this.$router.options.routes
-        .map(x => x.children)
-        .map(children => children && children.map(child => child.name))
-        .flat()
-        .filter(x => x)
+    routeGroups () {
+      const children = this.$router.options.routes[0].children
+      return children && children
+        .filter(route => route.name && route.children)
+        .map(route => {
+          return {
+            name: route.name,
+            routes: route.children
+          }
+        })
     }
   }
 }
