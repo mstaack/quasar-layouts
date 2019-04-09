@@ -20,11 +20,12 @@ Don't forget to add componets you use to the `quasar.conf.js` file if they are n
 
 To build: `quasar dev`
 
-Site can be seen here: https://reverent-volhard-4aed03.netlify.com
+Site can be seen here: https://quasar-layouts.netlify.com
 
 Currently done (add alpabetically):
 - Github
 - Google News
 - Google Photos
 - Google Play
+- Software as a Service (SaaS)
 - Youtube
