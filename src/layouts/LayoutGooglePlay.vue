@@ -37,7 +37,7 @@
 
           <q-btn round flat>
             <q-avatar size="34px" >
-              <img src="https://cdn.quasar-framework.org/img/boy-avatar.png">
+              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
             </q-avatar>
             <q-tooltip>Google Account</q-tooltip>
           </q-btn>

@@ -42,7 +42,7 @@
           </q-btn>
           <q-btn round flat>
             <q-avatar class="gt-xs">
-              <img src="https://cdn.quasar-framework.org/img/boy-avatar.png">
+              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
             </q-avatar>
           </q-btn>
         </div>
